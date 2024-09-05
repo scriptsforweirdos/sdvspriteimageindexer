@@ -4,7 +4,7 @@ from PIL import ImageDraw, ImageFont, Image
 
 def getFiles():
     inbound = "in"
-    files = [f for f in os.listdir(inbound) if os.path.isfile(os.path.join(inbound, f))]
+    files = [f for f in os.listdir(inbound) if os.path.isfile(os.path.join(inbound, f)) and not f.startswith(".")]
     return files
 
 
@@ -48,6 +48,9 @@ def makeGrid(fileName):
             draw.text((thisX, thisY), str(i), font=fontFace, fill=fillcolor)
             i += 1  # increment the number
 
+    # make out and processed dirs if they don't exist
+    os.makedirs("out/", exist_ok=True)
+    os.makedirs("processed/", exist_ok=True)
     # save new image
     bigImage.save("out/{}-indexed.{}".format(fileParts[0], fileExtension))
     # move source image to processed dir
