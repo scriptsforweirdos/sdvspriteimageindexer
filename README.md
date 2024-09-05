@@ -5,7 +5,7 @@ Resulting files are doubled in size for legibility.
 
 Made by request for a Mac user who wanted similar functionality to the Windows only script by Calcifer.
 
-![Enlarged and numbered](https://github.com/[scriptsforweirdos]/spriteimageindexer/samplimg.png)
+![Enlarged and numbered](sampleimg.png)
 
 ## Requirements
 
