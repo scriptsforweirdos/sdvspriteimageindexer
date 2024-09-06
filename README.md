@@ -3,7 +3,7 @@
 Python script to add index numbers to Image spritesheets, starting with 0 in the top left corner.
 Resulting files are doubled in size for legibility.
 
-Made by request for a Mac user who wanted similar functionality to the Windows only script by Calcifer.
+Made by request for a Mac user who wanted similar functionality to the Windows only script by [Sophiesalacia](https://github.com/sophiesalacia).
 
 ![Enlarged and numbered](sampleimg.png)
 
@@ -22,6 +22,6 @@ For example:
 * If you want to index "springobjects.png", place it in the "in" directory with the name "springobjects-16-16.png".
 * If you want to index an NPC spritesheet such as "Characters/Abigail.png", use the name "Abigail-16-32.png"
 
-**Run the script with `python convert.py`**
+**Run the script with `py convert.py` (Windows) or `python3 convert.py` (Mac).**
 
 Images will be taken from the "in" folder, moved to the "processed" folder afterwards. The enlarged image with numbers will be placed in the "out" folder, with the name "yourfilename-indexed".
